@@ -19,16 +19,19 @@ if (eta < 18)
 {
     var under18 = prezzoalKm * km * 0.8;
     console.log(under18);
+    document.getElementById('prezzo-biglietto').innerHTML = 'Gentile cliente, il prezzo del biglietto è: ' + under18.toFixed(2) + '€';
 }
 
 else if (eta >= 65) 
 {
     var over65 = prezzoalKm * km * 0.6;
     console.log(over65);
+    document.getElementById('prezzo-biglietto').innerHTML = 'Gentile cliente, il prezzo del biglietto è: ' + over65.toFixed(2) + '€';
 }
 
 else 
 {
     var prezzostandard = prezzoalKm * km;
     console.log(prezzostandard)
+    document.getElementById('prezzo-biglietto').innerHTML = 'Gentile cliente, il prezzo del biglietto è: ' + prezzostandard.toFixed(2) + '€';
 }
